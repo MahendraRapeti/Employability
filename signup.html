@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                background-image: linear-gradient(to right, blue , red,yellow);           
+            }
+            .a{
+                border-radius: 4px ;
+                background-color:rgba(3, 3, 3, 0.966) ;
+                width: 350px;
+                height:520px;
+                margin:90px 550px;
+            }
+            .big{
+                font-family:sans-serif;
+                padding: 10px;
+                margin:5px;
+                color: aliceblue;
+            }
+            .input{
+                position:center;
+                height: 20px;
+                width:200px;
+                margin: 10px 20px;
+                border-radius: 5px;
+                box-shadow: 10px rgb(214, 209, 209);
+            }
+            .submit{
+                padding: 5px 10px;  
+                color: rgb(12, 8, 240);
+                background-color:  rgb(245, 241, 4);
+                margin: 10px 120px;
+            }
+            .submit:hover{
+                color:rgb(97, 3, 248);
+                background: rgb(10, 255, 2);
+                cursor: pointer;
+            }
+            .logo{
+                margin: 10px;
+                cursor: pointer;
+            }
+            .toggle{
+                color: rgb(8, 8, 245);
+                padding: 5px 25px;
+                margin: 0px 105px;
+                background: transparent;
+                cursor: pointer;
+                border: 0;
+                font-size: 13px;
+                font-weight: 600;
+                background-image: linear-gradient(to right, rgb(255, 0, 0) , yellow );           
+            }
+            .toggle:hover{
+                background-color:rgb(250, 142, 1);
+                color:brown;
+                transition: .3s;
+            }
+            .div1{
+                background-color: transparent;
+                margin: 1px;
+                padding: 2px 5px;
+            }
+            ins,sup{
+                margin: 0px 25px;
+                color:white;
+                cursor: pointer;
+            }
+            ins:hover,sup:hover{
+                color:red;
+            }
+            #i{
+                color: red;
+                margin: 15px 45px;
+            }
+            h2{
+                font-style:inherit;
+                color:rgb(250, 250, 8);
+                margin: 2px 110px 20px 110px;
+            }
+        </style>
+
+           <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-auth.js"></script>
+<script src="login.js"></script>
+
+    </head>
+    <body>
+
+      
+     <!--   <img class="logo" src="screen.png" alt="logo" height="100" width="100"> -->
+        <div class="a"></br></br>
+            <h2>SIGN-UP</h2>
+            <big class="big">USERNAME</big></br>
+            <input type="text" class="input" placeholder="USERNAME" ></br></br>
+            <big class="big">EMAIL-ID</big></br>
+            <input type="email" class="input" placeholder="email-id"  id="email"></br></br>
+            <big class="big">PASSWORD</big></br>
+            <input type="password" class="input" placeholder="password" id="password"></br></br>
+            <button class="submit" onclick="signup()">SUBMIT</button></br>
+            <p id="i">--------------------OR--------------------</p></br>
+            <div class="div1">
+                <button class="submit" onclick="log()">LOG-IN</button></div></br></br>
+        </div>
+        
+    </body>
+</html>

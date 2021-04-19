@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #img{
+                height: 150px;
+                width:150px;
+                margin: 0px 8px ;
+                cursor: pointer;
+            }
+            ul {
+               list-style-type: none;
+                margin: 0;
+               padding: 0;
+               overflow: hidden;
+               background-color: rgb(23, 24, 24);
+               }
+            li
+            {
+                float: left;
+                display: block;
+                color: rgb(16, 29, 13);
+                padding: 10px 50px;
+                margin: 4px 8px;  
+                cursor: pointer;
+            }
+            .l1:hover,.l2:hover,.l3:hover,.l4:hover,.l5:hover {
+                background:linear-gradient(yellow,pink) ;
+                cursor: pointer;
+            }  
+            .btn{
+                margin: 0px 15px;           
+                height:20px;
+                width:120px;
+                font-size: small;
+                background:linear-gradient(yellow,pink) ;
+                cursor:alias;
+           }
+            .slider
+            {
+                margin: 50px auto;
+                width:1400px;
+                height: 300px;
+                background: url(14.webp);
+                animation: slide 10s infinite;
+            }
+            @keyframes slide{
+                25%{
+                    background: url(11.jpeg);
+                }
+                50%{
+                    background: url(12.png);
+                }
+                75%
+                {
+                    background: url(14.webp);
+                }
+                100%{
+                    background: url(15.jpeg);
+                }
+            }
+            h1{
+                color: rgb(0, 217, 255);
+                letter-spacing: 2px;
+                font-family:'Times New Roman', Times, serif;
+            }
+            p{
+                letter-spacing: 1px;
+                word-spacing: 1px;
+                line-height: 26px;
+            }
+        </style>
+
+    </head>
+    <body>
+        
+     <centre>   <img id="img" src="logo.png"> </centre>
+        <ul>
+            <li class="l1"><button class="btn" onclick="jobs()">JOBS</button></li>
+            <li class="l3"><button class="btn" onclick="about()">ABOUT</button></li>
+            <li class="l4"i><button class="btn" onclick="signup()">SIGN-UP</button></li>
+            <li class="l5"><button class="btn" onclick="login()">LOGIN</button></li>
+            <li class="l5"><button class="btn" onclick="contact()">CONTACT US</button></li>
+  <!--    <li><input class="bu" type="text" placeholder="SEARCH"></li>-->
+        </ul></br></br>
+        <marquee style="color: blue;background-color: yellow;height: 20px;">NEW JOBS AVAILABLE..!!!APPLY NOW</marquee>
+        <div class="slider"></div>
+        <h1>     WHAT IS THE TERM "EMPLOY" ACTUALLY MEAN ??</h1>
+        <p>
+            USE, EMPLOY, UTILIZE mean to put into service especially to attain an end. USE implies availing oneself of something as a means or instrument to an end.  willing to use any means to achieve her ends . EMPLOY suggests the use of a person or thing that is available but idle, inactive, or disengaged.  looking for better ways to employ their skills  UTILIZE may suggest the discovery of a new, profitable, or practical use for something.</p>
+        <h1>WHY EMPLOYEMENT ?!!</h1>
+        <p>The role of jobs in any economy plays a crucial role especially in the developing economy, as an employed person contributes to the society and the economy at large in terms of the GDP and the per capita income.
+            Not only that the employed person has the power to select the government and find out the flaws and has the ability to fix them. Thus the economy can be better equipped by the job providers and the job seekers. When organized the citizens can boing the govt on their knees and influence the economic reforms of the country.
+            Job growth of a nation shows the strength of the nation in terms of the workforce diversity equal participation of men and women in the economy thus has a serious influence on the nation builder i.e the future generations.For individuals, work is an important feature in structuring: personal and social identity; family and social bonds; ways of making money, and thereby accessing a number of essential and non-essential goods, services and activities; daily routines; level of activity; physical and mental well-being; self-confidence and self-esteem; a sense of self-worth provided by the feeling of contributing to society or the common good
+            For societies, work is an important feature in: promoting community cohesion and safety; increasing civic participation; reducing public spending in a range of welfare benefits (provided, of course, that work is performed in a decently paid job); promoting social and economic development; organising social life at a macro level
+        </p>
+        <h1>IMPORTANCE OF EMPLOYEMENT FOR EVERYONE</h1>
+        <p>We often think of a job as a source of income for workers. But jobs represent much more for society and individuals. Countries grow, for instance, when more people work, when each job in the economy becomes more productive, and when people move from low to higher productivity jobs. A good portion of the reduction in poverty that we have seen worldwide can be explained by an increase in the labour income of the poor, their main source of income. Jobs also contribute to the accumulation of human capital and promote social stability. A young person who is employed learns on the job, gains experience, makes other workers in the economy more productive and is less likely to engage in risky or criminal behaviour. Women who work also tend to invest more in the human capital of their children. Ultimately, our jobs give us a sense of identity, affect our level of wellbeing and determine whether we feel self-fulfilled or alienated, whether we are likely to start or join a revolution, and whether or not we vote and for whom.</p>
+      
+
+        <script>
+
+function jobs()
+{
+    window.location="signup.html";
+}
+function about()
+{
+    window.location="contact.html";
+}
+function contact()
+{
+    window.location="contact.html";
+}
+function signup()
+{
+    window.location="signup.html";
+}
+function login()
+{
+    window.location="login.html";
+}
+            </script>
+    </body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            h1{
+                background-color: rgba(121, 9, 248, 0.973);
+                font-family: 'Times New Roman', Times, serif;
+                font-weight: 900;
+                padding: 20px 20px;
+                color:rgb(245, 244, 247);
+                margin: 40px 40px;
+            }
+            .a{
+                border-radius: 4px ;
+                background-color:rgba(101, 190, 219, 0.4) ;
+                width: 1350px;
+                height: 1150px;
+                margin:40px 40px;  
+            }
+            .img{
+                background-image: url('../MiniProject/screen.png');
+                margin:10px 50px;
+                height: 150px;
+                width:150px ;
+                background-repeat: no-repeat;
+            }
+            p{
+                color: rgb(253, 251, 253);
+                margin: 20px 25px ;
+                font-weight: 700;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .input1{
+                position:center;
+                height: 30px;
+                width:300px;
+                margin: 2px 40px;
+                border-radius: 10px;
+            }
+            .button1{
+                padding: 5px 10px;  
+                color: white;
+                background-image:  linear-gradient(to right,blue,green);
+                margin: 40px 580px;
+            }
+            .button1:hover{
+                color:black;
+                background: linear-gradient(to right,pink,yellow);
+                cursor: pointer;
+            }
+            .button2{
+                padding: 5px 10px;  
+                color: rgb(0, 0, 0);
+                background-image: linear-gradient(to right,pink,yellow);
+                margin: 1px 20px;
+            }
+            .button2:hover{
+                color:rgb(237, 253, 7);
+                background-image:  linear-gradient(to right,blue,green);
+                cursor: pointer;
+            }
+            .logo{
+                margin: 40px;
+                cursor: pointer;
+            }
+            ul {
+                margin: 0;
+               padding: 0;
+               overflow: hidden;
+               background-color: #333;
+               }
+            li 
+            {
+                float: left;
+                display: block;
+                color: white;
+                padding: 10px 180px;
+                margin: 10px 15px;  
+                cursor: pointer;
+            }
+            li:hover {
+                color:red;
+              background-image: linear-gradient(to right,yellow,pink);
+            }               
+            body{
+                background-image: linear-gradient(to right,red,blue);
+            }
+            h4{
+                padding: 2px;
+                margin: 0px 60px;
+            }
+        </style>
+    </head>
+    <body>
+     <!--   <img class="logo" src="logo.png" alt="logo" height="100" width="100">  -->
+    
+      <ul>  
+     
+      <li>  <button class="button2" onclick="jobs()">JOBS</button></li>
+       
+        <li> <button class="button2" onclick="about()">ABOUT</button></li>
+        <li> <button class="button2" onclick="logout()" >LOG OUT</button></li>
+            
+    </ul>
+        <h1>Set Up Your Profile...!!!</h1>
+        <div class="a">
+        </br>
+            <center>
+            <div class="img"></div>
+            <p>FIRST NAME:</p>
+            <input class="input1" placeholder="FIRT NAME" type="text" name="f_name">
+            <p>GENDER:</p>
+            <h4>MALE<input name="btn" type="radio"><br/><br/>FEMALE<input name="btn" type="radio"></h4>
+            <p>LAST NAME:</p>
+            <input class="input1" placeholder="LAST NAME"  type="text" name="l_name">
+            <p>E-MAIL:</p>
+            <input class="input1" placeholder="E-MAIL ID" type="email">
+            <p>MOBILE NO:</p>
+            <input class="input1" placeholder="MOBILE-NO" type="number">
+            <p>CURRENT CITY:</p>
+            <input class="input1" placeholder="CURRENT CITY" type="text">
+          <p>UPLOAD RESUME:</p>
+            <input type="file" class="button2" name="upload">
+    </br></br></br>
+   <!-- <input style="margin: 0px 0px 0px 40px;" type="checkbox">
+    <b style="color: rgb(115, 255, 0) ; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">*By ticking the checkbox, I agree to the Terms and Conditions and Privacy Policy governing the use of HiredIn...</b>-->
+            <button class="button1" onclick="apply()">APPLY FOR JOB</button><center>
+            </div>
+
+
+            <script>
+                function apply()
+                {
+                    window.location="message.html";
+                }
+                function about()
+                {
+                    window.location="contact.html";
+                }
+                function jobs()
+                {
+                    window.location="main.html";
+                }
+                function logout()
+                {
+                    window.location="home.html";
+                }
+                </script>
+       
+    </body>
+</html>

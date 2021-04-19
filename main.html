@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            h1{
+                color:rgb(248, 4, 16);
+                margin: 60px 20px 40px;
+                text-align: center;
+            }
+            .a{
+                margin: 40px 110px ;
+                background-image: linear-gradient(to right, rgb(251, 250, 252) , rgb(4, 248, 4) );           
+                color: black;
+                cursor: pointer;
+                padding: 3px 10px;
+            }
+            p{
+                padding: 0px 25px;
+                color:rgb(3, 189, 245);
+                font-size:20px;
+            }
+            .b{
+                font-size: 30px;
+                color: rgb(2, 2, 2);
+                padding: 0px 20px;
+            }
+            .but{
+                padding: 5px 20px;
+                margin:3px 500px 15px;
+                background-image: linear-gradient(to right, rgb(0, 255, 255) , rgb(255, 0, 221) );           
+                cursor:alias;
+            }
+            .a:hover{
+                background-image: linear-gradient(to right, rgb(255, 0, 200) , rgb(21, 255, 0) );           
+                transform: scale(1.175);
+                border: 2px solid red ;
+
+            }
+            .but:hover{
+                color:blue;
+                background-color: rgb(7, 250, 7);
+            }
+            ul {
+               list-style-type: none;
+                margin: 0;
+               padding: 0;
+               overflow: hidden;
+               background-color: rgb(23, 24, 24);
+               }
+            li,bu
+            {
+                float: left;
+                display: block;
+                color: rgb(16, 29, 13);
+                padding: 10px 50px;
+                margin: 4px 8px;  
+                cursor: pointer;
+            }
+            .bu{
+                height: 20px;
+                width: 200px;
+            }
+            .l1:hover,.l2:hover,.l3:hover,.l4:hover,.l5:hover {
+                background:linear-gradient(yellow,pink) ;
+                cursor: pointer;
+            }  
+            .btn{
+                margin: 0px 15px;           
+                height:20px;
+                width:120px;
+                font-size: small;
+                background:linear-gradient(yellow,pink) ;
+                cursor:alias;
+           }
+        </style>
+
+        
+    </head>
+    <body style="background-image: linear-gradient(to right, rgb(0, 26, 255) , yellow );           ">  
+   
+        <h1>FIND AN IDEAL JOB FOR YOU.. !!!</h1>
+        <ul>
+            <li class="l1"><button class="btn" onclick="jobs()">COMPANIES</button></li>
+            <li class="l3"><button class="btn" onclick="practice()">PRACTICE</button></li>
+            <li class="l4"i><button class="btn" onclick="about()">ABOUT US</button></li>
+            <li class="l5"><button class="btn" onclick="contact()">CONTACT US</button></li>
+          <li > <input class="bu" type="search" value="" placeholder="search companies" id="search" onchange="open1()"></li>
+        </ul></br>
+
+       
+        <marquee style="background-color: rgb(0, 238, 255);color: rgb(255, 0, 13);padding: 2px 4px;margin: 20px 20px 30px;">***   THESE COMPANIES ARE NOW HIRING ... HURRY UP AND APPLY NOW .. !!!  ***</marquee>
+        <div class="a">
+                <p class="b"> SAMSUNG ELECTRONICS</p>
+                <p>POST : Web Developer-Backend & Frontend</p>
+                <button class="but" onclick="samsung()">DETAILS</button>
+        </div>
+        <div class="a">
+            <p class="b"> TOYOTA MOTORS </p>
+            <p>POST : Web Developer-Backend & Frontend</p>
+            <input type="submit" class="but" value="DETAILS" name="toyo">
+    </div>
+    <div class="a">
+        <p class="b"> MICROSOFT </p>
+        <p>POST : Web Developer-Backend & Frontend</p>
+        <input type="submit" class="but" value="DETAILS" name="micro">
+    </div>
+    <div class="a">
+        <p class="b"> IBM </p>
+        <p>POST : Web Developer-Backend & Frontend</p>
+        <input type="submit" class="but" value="DETAILS" name="ibm">
+    </div>   
+    <div class="a">
+        <p class="b"> ACCENTURE </p>
+        <p>POST : Web Developer-Backend & Frontend</p>
+        <input type="submit" class="but" value="DETAILS" name="acce">
+    </div>
+    <div class="a">
+        <p class="b"> INTEL </p>
+        <p>POST : Web Developer-Backend & Frontend</p>
+        <input type="button" class="but" value="DETAILS">
+    </div>
+    <div class="a">
+        <p class="b"> FACEBOOK </p>
+        <p>POST : Web Developer-Backend & Frontend</p>
+        <button class="but" onclick="facebook()">DETAILS</button>
+    </div>
+    <div class="a">
+        <p class="b"> GOOGLE </p>
+        <p>POST : Web Developer-Backend & Frontend</p>
+        <button class="but" onclick="google()">DETAILS</button>
+    </div>
+    <div class="a">
+        <p class="b"> CISCO </p>
+        <p>POST : Web Developer-Backend & Frontend</p>
+        <input type="button" class="but" value="DETAILS">
+    </div>
+    <div class="a">
+        <p class="b"> J.P.MORGAN </p>
+        <p>POST : Web Developer-Backend & Frontend</p>
+        <input type="button" class="but" value="DETAILS">
+</div>
+<div class="a">
+    <p class="b"> HITACHI </p>
+    <p>POST : Web Developer-Backend & Frontend</p>
+    <input type="button" class="but" value="DETAILS">
+</div>
+<div class="a">
+    <p class="b"> ORACLE </p>
+    <p>POST : Web Developer-Backend & Frontend</p>
+    <input type="button" class="but" value="DETAILS">
+</div>
+<div class="a">
+    <p class="b"> SAP </p>
+    <p>POST : Web Developer-Backend & Frontend</p>
+    <input type="button" class="but" value="DETAILS">
+</div>
+<div class="a">
+    <p class="b"> HSBC </p>
+    <p>POST : Web Developer-Backend & Frontend</p>
+    <input type="button" class="but" value="DETAILS">
+</div>
+<div class="a">
+    <p class="b"> AMAZON </p>
+    <p>POST : Web Developer-Backend & Frontend</p>
+    <button class="but" onclick="amazon()">DETAILS</button>
+</div>
+<div class="a">
+    <p class="b"> NETFLIX </p>
+    <p>POST : Web Developer-Backend & Frontend</p>
+    <input type="button" class="but" value="DETAILS">
+</div>
+<div class="a">
+    <p class="b"> PAY PAL </p>
+    <p>POST : Web Developer-Backend & Frontend</p>
+    <input type="button" class="but" value="DETAILS">
+</div>
+
+<script>
+    function open1()
+    {
+        var x=document.getElementById("search").value;
+
+        if(x=="amazon")
+        {
+            window.location="amazon.html";
+        }
+
+        if(x=="google")
+        {
+            window.location="google.html";
+        }
+        if(x=="samsung")
+        {
+            window.location="samsung.html";
+        }
+        if(x=="facebook")
+        {
+            window.location="facebook.html";
+        }
+    }
+
+    function jobs()
+    {
+        window.location="main.html";
+    }
+    function practice()
+    {
+        window.location="main.html";
+    }
+    function about()
+    {
+        window.location="contact.html";
+    }
+    function contact()
+    {
+        window.location="contact.html";
+    }
+    function amazon()
+    {
+        window.location="amazon.html";
+    }
+    function google()
+    {
+        window.location="google.html";
+    }
+    function facebook()
+    {
+        window.location="facebook.html";
+    }
+    function samsung()
+    {
+        window.location="samsung.html";
+    }
+   
+
+    </script>
+        
+    </body>
+</html>
